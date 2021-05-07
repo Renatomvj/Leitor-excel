@@ -9,11 +9,11 @@ namespace Gerenciadorxml
     {
         static void Main(string[] args)
         {
-            //Abrindo o arquivo do excel.
+           
             using (var workbook = new XLWorkbook(@"C:\Users\Renato Martins\Desktop\planilha\Produtividade 2019-2020.xlsx"))
             {
 
-                //Criando um for para percorrer todas as abas da planilha. 
+         
 
                 var listaValores = new List<DadosExcel>();
 
@@ -28,13 +28,12 @@ namespace Gerenciadorxml
 
                     if (planilha.Name.StartsWith("T"))
                     {
-                        //Nome da aba da planilha.
+                     
                         Console.WriteLine("Sheet: " + planilha.Name);
-                        Console.WriteLine();
-
+                    
                         while (!parada)
                         {
-                            // Planilha recebe todas abas que tiver existente na planilha
+                           
 
                             for (int coluna = 1; coluna < 28; coluna++)
                             {
